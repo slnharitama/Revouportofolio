@@ -1,0 +1,14 @@
+.logo-icon{
+    height: 58px;
+    width: 75px;
+    background-color: palevioletred;
+    border-radius: 58%;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
