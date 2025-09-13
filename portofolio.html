@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio -salna haritama</title>
+    
+    <link rel="stylesheet" href="css/portofolio.css">
+
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="main-header p-[8px]">
+        <div class="logo-icon"></div>
+    
+        <nav>
+            <ul class="flex">
+                <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
+                <li><a class="border p-[8px] rounded" href="#profile">Our profile</a></li>
+                <li><a class="border p-[8px] rounded" href="#portofolio">Portofolio</a></li>
+                <li><a class="border p-[8px] rounded" href="#message-us">Message us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr/>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center justify-center">
+            <h1 class="text-4xl font-bold">Welcome to <span id="welcome-user">user</span>'s Portofolio</h1>
+        </section>
+
+        <section id="profile" class="min-h-screen flex items-center justify-center">
+            <div class="profile-box">
+            <h2 class="text-3xl font-semibold">Our profile</h2>
+             <p class="max-w-xl text-center mb-6">
+        Halo, saya <b>Salna Haritama</b>, pelajar SMK jurusan TJKT. 
+        Website ini dibuat sebagai project pembelajaran dasar pemrograman web.
+      </p>
+
+      <div class="visi-misi">
+    <div class="visi">
+      <h3>Visi</h3>
+      <p>Menjadi individu yang berkompeten dalam bidang teknologi jaringan dan pemrograman.</p>
+    </div>
+
+    <div class="misi">
+      <h3>Misi</h3>
+      <ul>
+        <li>Menguasai dasar-dasar pemrograman dan jaringan komputer.</li>
+          <li>Mengembangkan keterampilan melalui project nyata.</li>
+          <li>Mengutamakan kerja sama tim dan etika profesional.</li>
+          <li>Terus belajar mengikuti perkembangan teknologi.</li>
+        </ul>
+      </div>
+        </section>
+
+        <section id="portofolio" class="min-h-screen flex items-center justify-center">
+            <div class="portofolio-box">
+            <h2 class="text-3xl font-semibold mb-4">Portofolio</h2>
+            </div>
+            
+            <ul class="list-disc">
+                <div class="portofolio-container">
+                    <div class="card">
+                        <h3>Website Sederhana</h3>
+                        <p>Membuat website menggunakan HTML, CSS, dan JavaScript dasar.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Desain UI</h3>
+                        <ul>
+                            <li>Merancang tampilan antarmuka dengan CSS dan TailwindCSS.</li>
+                            <li>Website sederhana menggunakan HTML, CSS, dan JS</li>
+                            <li>Desain UI dengan TailwindCSS</li>
+                        </ul>
+                    </div>
+                </div>
+         </section>
+
+        <section id="message-us" class="min-h-screen flex flex-col items-center justify-evenly bg-gray-100">
+            <h2 class="text-3xl font-semibold">Message us</h2>
+            
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="name" class="block mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="border p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="border p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="border p-2 w-full" required></textarea>
+                </div>
+                <button type="button" onclick="validateForm();" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center p-[4] bg-palevioletred-200">
+            &copy; 2025 Salna Haritama, All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/portofolio.js"></script>
+</body>
+</html>
